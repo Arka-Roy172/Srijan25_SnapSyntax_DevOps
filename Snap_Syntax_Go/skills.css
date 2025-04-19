@@ -1,0 +1,79 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Roboto Mono';
+    background: linear-gradient(135deg,#030110, #000000, #02012d );
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Skills grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill-name {
+    font-size: 20px;
+    font-weight: 500;
+    width: 120px;
+}
+
+.skill-dots {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ff00cc;
+}
+
+.dot.empty {
+    background-color: rgba(255, 0, 204, 0.2);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 48px;
+        margin-bottom: 40px;
+    }
+}
